@@ -1,16 +1,31 @@
 import React from "react";
-import { Container } from "../ui";
+import clsx from "clsx";
+import { Container } from "~/components/ui";
 
-const ShowcaseSection = () => {
+interface ShowcaseSectionProps {
+  className?: string;
+}
+
+const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({ className }) => {
   return (
-    <section id="showcase">
-      <Container>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus earum
-          eius reprehenderit autem excepturi officia soluta, veniam vitae
-          tempora? Repellat sapiente optio maxime debitis natus dolores cum
-          voluptatibus? Neque, aspernatur!
-        </p>
+    <section id="showcase" className={clsx("", className)}>
+      <Container className="flex flex-col lg:flex-row gap-x-8">
+        <div className="w-full">
+          <p className="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, vel
+            atque, impedit mollitia ab nihil consequuntur illum facilis tempora
+            at veniam, optio distinctio quo placeat molestiae aliquid expedita
+            blanditiis nam.
+          </p>
+        </div>
+        <div className="w-full">
+          <p className="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, vel
+            atque, impedit mollitia ab nihil consequuntur illum facilis tempora
+            at veniam, optio distinctio quo placeat molestiae aliquid expedita
+            blanditiis nam.
+          </p>
+        </div>
       </Container>
     </section>
   );

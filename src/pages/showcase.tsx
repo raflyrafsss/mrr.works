@@ -11,8 +11,8 @@ export default function Showcase() {
   return (
     <PageLayout>
       <PageHeader />
-      <PageContent className="">
-        <ShowcaseSection />
+      <PageContent>
+        <ShowcaseSection className="py-12" />
       </PageContent>
       <PageFooter />
     </PageLayout>
