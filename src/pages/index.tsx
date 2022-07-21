@@ -9,10 +9,10 @@ import {
 
 export default function Home() {
   return (
-    <PageLayout className="">
+    <PageLayout>
       <PageHeader />
-      <PageContent className="">
-        <HomeSection />
+      <PageContent>
+        <HomeSection className="py-32" />
       </PageContent>
       <PageFooter />
     </PageLayout>
