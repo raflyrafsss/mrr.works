@@ -3,8 +3,8 @@ import "nprogress/nprogress.css";
 
 import React, { useEffect } from "react";
 import type { AppProps } from "next/app";
-import { Layout } from "~/components/ui";
 import { nprogress } from "~/libs/nprogress";
+import { Layout } from "~/components/layout";
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
@@ -28,7 +28,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     };
   }, [router]);
   return (
-    <Layout id="root" className="w-full min-h-screen flex flex-col bg-gray-50">
+    <Layout
+      id="root"
+      className="w-full min-h-screen flex flex-col antialiased bg-gray-50"
+    >
       <Component {...pageProps} />
     </Layout>
   );
