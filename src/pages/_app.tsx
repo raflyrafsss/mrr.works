@@ -28,10 +28,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     };
   }, [router]);
   return (
-    <Layout
-      id="root"
-      className="w-full min-h-screen flex flex-col antialiased bg-gray-50"
-    >
+    <Layout id="root">
       <Component {...pageProps} />
     </Layout>
   );

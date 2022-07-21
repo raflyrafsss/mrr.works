@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeSection } from "~/components/home";
+import { AboutSection } from "~/components/about";
 import {
   PageContent,
   PageFooter,
@@ -7,12 +7,12 @@ import {
   PageLayout,
 } from "~/components/layout";
 
-export default function Home() {
+export default function About() {
   return (
-    <PageLayout className="">
+    <PageLayout>
       <PageHeader />
-      <PageContent className="">
-        <HomeSection />
+      <PageContent>
+        <AboutSection />
       </PageContent>
       <PageFooter />
     </PageLayout>
