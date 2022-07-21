@@ -1,18 +1,18 @@
 import React from "react";
-import { HomeSection } from "~/components/home";
 import {
   PageContent,
   PageFooter,
   PageHeader,
   PageLayout,
 } from "~/components/layout";
+import { ShowcaseSection } from "~/components/showcase";
 
-export default function Home() {
+export default function Showcase() {
   return (
-    <PageLayout className="">
+    <PageLayout>
       <PageHeader />
       <PageContent className="">
-        <HomeSection />
+        <ShowcaseSection />
       </PageContent>
       <PageFooter />
     </PageLayout>
