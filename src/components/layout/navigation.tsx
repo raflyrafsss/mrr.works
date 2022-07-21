@@ -10,7 +10,9 @@ const Navigation = () => {
     <nav id="nav" className="flex flex-col lg:flex-row">
       <div className="w-full flex items-center justify-between">
         <div id="nav-logo" className="">
-          <Link href="/">MRR</Link>
+          <NextLink href="/">
+            <a className="text-2xl font-bold tracking-tighter">MRR</a>
+          </NextLink>
         </div>
         <div className="block lg:hidden">
           <button className="w-8 h-8 inline-flex items-center justify-center text-xl transition-transform active:scale-95">
