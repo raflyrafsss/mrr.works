@@ -15,7 +15,6 @@ const HomeSection: React.FC<HomeSectionProps> = ({ className }) => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio,
           culpa.
         </p>
-        <ButtonLink href="/">DOWNLOAD CV</ButtonLink>
       </Container>
     </section>
   );
