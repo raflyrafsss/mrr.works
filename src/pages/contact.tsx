@@ -12,7 +12,7 @@ export default function Contact() {
     <PageLayout>
       <PageHeader />
       <PageContent>
-        <ContactSection className="py-12" />
+        <ContactSection />
       </PageContent>
       <PageFooter />
     </PageLayout>

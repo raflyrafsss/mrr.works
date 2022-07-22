@@ -12,7 +12,7 @@ export default function About() {
     <PageLayout>
       <PageHeader />
       <PageContent>
-        <AboutSection className="py-12" />
+        <AboutSection />
       </PageContent>
       <PageFooter />
     </PageLayout>

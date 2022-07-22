@@ -12,7 +12,7 @@ export default function Home() {
     <PageLayout>
       <PageHeader />
       <PageContent>
-        <HomeSection className="py-32" />
+        <HomeSection />
       </PageContent>
       <PageFooter />
     </PageLayout>
