@@ -30,7 +30,7 @@ const NavigationSocialMenu: React.FC<NavigationSocialMenuProps> = ({
       {SocialNavigationMenu.map((value, index) => (
         <li key={index}>
           <NextLink href={value.path}>
-            <a className="text-lg text-gray-600 hover:text-blue-500/80">
+            <a className="text-2xl lg:text-lg text-gray-600 hover:text-blue-500/80">
               {value.menu}
             </a>
           </NextLink>

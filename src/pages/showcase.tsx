@@ -12,7 +12,7 @@ export default function Showcase() {
     <PageLayout>
       <PageHeader />
       <PageContent>
-        <ShowcaseSection className="py-12" />
+        <ShowcaseSection />
       </PageContent>
       <PageFooter />
     </PageLayout>

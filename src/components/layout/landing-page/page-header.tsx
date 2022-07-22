@@ -14,7 +14,7 @@ const PageHeader = () => {
             <div>Logo</div>
             <button
               onClick={() => setIsOpen(true)}
-              className="lg:hidden w-8 h-8 inline-flex items-center justify-center transition-all duration-150 focus:outline-none active:scale-90"
+              className="lg:hidden w-8 h-8 inline-flex items-center justify-center text-lg transition-all duration-150 focus:outline-none active:scale-90"
             >
               <IoMenu />
             </button>
@@ -22,27 +22,27 @@ const PageHeader = () => {
 
           <div
             className={clsx(
-              "lg:static fixed z-50 top-0 lg:right-0 w-full h-full lg:h-auto px-6 lg:px-0 lg:py-0 bg-white lg:bg-gray-50 transition-all duration-300 ",
+              "lg:static fixed z-50 top-0 lg:right-0 w-full min-h-screen lg:min-h-0 px-6 lg:px-0 lg:py-0 bg-white sm:bg-gray-50 transition-all duration-300 ",
               isOpen ? "right-0" : "-right-full"
             )}
           >
-            <div className="flex flex-col justify-between h-screen">
+            <div className="flex flex-col justify-between">
               {/* Menu */}
               <div className="lg:hidden h-16 flex items-center justify-end">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="w-8 h-8 inline-flex items-center justify-center transition-all duration-150 focus:outline-none active:scale-90"
+                  className="w-8 h-8 inline-flex items-center justify-center text-lg transition-all duration-150 focus:outline-none active:scale-90"
                 >
                   <IoClose />
                 </button>
               </div>
-              <NavigationMenu className="flex flex-col lg:flex-row items-center space-y-4 gap-x-4 gap-y-2" />
-              <NavigationSocialMenu className="mt-8 lg:hidden flex flex-row justify-center gap-x-4" />
+              <NavigationMenu className="flex flex-col lg:flex-row items-center h-[80vh] lg:h-0 justify-center gap-x-4 gap-y-6" />
+              <NavigationSocialMenu className="h-16 lg:hidden flex flex-row items-center justify-center gap-x-4" />
             </div>
           </div>
 
           <div className="hidden lg:flex flex-row w-full justify-end">
-            <NavigationSocialMenu className="hidden lg:flex flex-row gap-x-6" />
+            <NavigationSocialMenu className="hidden lg:flex flex-row gap-x-4" />
           </div>
         </nav>
       </Container>

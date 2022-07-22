@@ -9,7 +9,11 @@ const PageContent: React.FC<PageContentProps> = ({
   ...props
 }) => {
   return (
-    <div id="content-wrapper" className={clsx("flex-1", className)} {...props}>
+    <div
+      id="content-wrapper"
+      className={clsx("flex-1 py-20 lg:py-12", className)}
+      {...props}
+    >
       {children}
     </div>
   );
