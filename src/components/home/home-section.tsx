@@ -13,7 +13,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ className }) => {
       className={clsx("flex items-center justify-center", className)}
     >
       <Container className="text-center">
-        <h1 className="font-bold text-4xl text-gray-800">
+        <h1 className="font-bold text-2xl lg:text-4xl text-gray-800">
           MUHAMMAD RAFLY RAFSANJANI
         </h1>
         <p className="uppercase">
