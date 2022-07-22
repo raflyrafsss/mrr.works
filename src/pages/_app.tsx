@@ -3,6 +3,7 @@ import "nprogress/nprogress.css";
 
 import React, { useEffect } from "react";
 import type { AppProps } from "next/app";
+import { DefaultSeo } from "next-seo";
 import { nprogress } from "~/libs/nprogress";
 import { Layout } from "~/components/layout";
 
@@ -29,6 +30,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   }, [router]);
   return (
     <Layout id="root">
+      <DefaultSeo
+        title="MRR - Muhammad Rafly Rafsanjani"
+        description="MRR Works"
+      />
       <Component {...pageProps} />
     </Layout>
   );
