@@ -1,6 +1,7 @@
 import React from "react";
 import NextLink from "next/link";
 import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
+import clsx from "clsx";
 
 const SocialNavigationMenu = [
   {
@@ -17,9 +18,15 @@ const SocialNavigationMenu = [
   },
 ];
 
-const NavigationSocialMenu = () => {
+interface NavigationSocialMenuProps {
+  className?: string;
+}
+
+const NavigationSocialMenu: React.FC<NavigationSocialMenuProps> = ({
+  className,
+}) => {
   return (
-    <ul className="flex flex-row gap-x-4">
+    <ul className={className}>
       {SocialNavigationMenu.map((value, index) => (
         <li key={index}>
           <NextLink href={value.path}>

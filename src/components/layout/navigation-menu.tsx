@@ -22,16 +22,20 @@ const DataNavigationMenu = [
   },
 ];
 
-const NavigationMenu = () => {
+interface NavigationMenuProps {
+  className?: string;
+}
+
+const NavigationMenu: React.FC<NavigationMenuProps> = ({ className }) => {
   const router = useRouter();
   return (
-    <ul className="flex flex-col lg:flex-row gap-x-4 gap-y-2">
+    <ul className={className}>
       {DataNavigationMenu.map((value, index) => (
         <li key={index}>
           <NextLink href={value.path}>
             <a
               className={clsx(
-                "text-sm uppercase tracking-tight hover:text-blue-500/90",
+                "text-2xl lg:text-sm text-center uppercase tracking-tight hover:text-blue-500/90",
                 router &&
                   router.pathname === value.path &&
                   "font-semibold text-blue-500"
