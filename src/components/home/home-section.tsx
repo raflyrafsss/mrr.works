@@ -13,11 +13,11 @@ const HomeSection: React.FC<HomeSectionProps> = ({ className }) => {
       className={clsx("flex items-center justify-center", className)}
     >
       <Container className="text-center">
-        {/* <h6 className="font-medium">SOFTWARE ENGINEER</h6> */}
-        <h1 className="font-bold text-4xl">MUHAMMAD RAFLY RAFSANJANI</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio,
-          culpa.
+        <h1 className="font-bold text-4xl text-gray-800">
+          MUHAMMAD RAFLY RAFSANJANI
+        </h1>
+        <p className="uppercase">
+          Software Developer Based in Bekasi, West Java
         </p>
       </Container>
     </section>

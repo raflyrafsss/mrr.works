@@ -5,7 +5,7 @@ const PageFooter = () => {
   return (
     <footer
       id="content-footer"
-      className="w-full h-12 flex items-center justify-center border-t border-gray-200"
+      className="w-full h-10 flex items-center justify-center border-t border-gray-200"
     >
       <Container className="flex items-center justify-center">
         <span className="block text-xs text-gray-600">

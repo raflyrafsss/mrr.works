@@ -11,7 +11,10 @@ const Layout: React.FC<LayoutProps> = ({ children, className, id }) => {
   return (
     <main
       id={id}
-      className={clsx("antialiased bg-gray-50 text-gray-600", className)}
+      className={clsx(
+        "relative antialiased bg-gray-50 text-gray-600 overflow-hidden",
+        className
+      )}
     >
       {children}
     </main>
